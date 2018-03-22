@@ -1,0 +1,21 @@
+.espacamentoTop{
+  
+    padding-top: 62px;
+}
+/*.tamanhoDatela{
+  height: 100vh;
+}*/
+.darkFooter{
+	background-color: #212529;
+}
+p {
+	margin-bottom: 3px;
+}
+.marginBottom {
+	margin-bottom: 100px; 
+}
+
+.mg-b50{
+	margin-bottom: 50px;
+
+}
