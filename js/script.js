@@ -32,7 +32,7 @@ var objeto = {
 
 				$('#id').val(result[0].id);
 					
-				$('#idNomeEdit').val(result[0].idEmail);
+				$('#idNomeEdit').val(result[0].nome);
 				$('#idEmailEdit').val(result[0].email);
 				$('#idTelefoneEdit').val(result[0].telefone);
 				$('#idDataNascEdit').val(result[0].dataNasc);
@@ -135,26 +135,39 @@ objeto.busca();
 
 
 $(document).ready(function(){
-	$('#btnAcessa').click(){
-		$('#editarSection').hide();
-		$('#tabela').hide();
-	}
 
-	$('#btn-edit').click(){
+	$('#btnCadastrar').click(function(){
+		
+		$('#cadastro').show();
+		$('#editarSection').hide();
+		
+	})
+
+	$('#btnEditar').click(function(){
+		
 		$('#cadastro').hide();
 		$('#editarSection').show();
-		$('#tabela').hide();
-	}
+		
+	})
+		// $('#tabela').hide();
+
+
+	// $('#btn-edit').click(){
+	// 	$('#cadastro').hide();
+	
+	// 	$('#tabela').hide();
+	// }
 
 
    $('#cadastro').hide();
    $('#editarSection').hide();
 
 	$('.listEdit').click(function(){
-		
+		$('#cadastro').hide();
+		$('#editarSection').show();
 		var id = $(this).attr('data-id');
 		objeto.listEdit(id);
-		return false;
+		
 	})
 
 	$('#editar').submit(function(){
@@ -191,7 +204,7 @@ function myFunction() {
 	table = document.getElementById("myTable");
 	tr = table.getElementsByTagName("tr");
 	for (i = 0; i < tr.length; i++) {
-		td = tr[i].getElementsByTagName("td")[0];
+		td = tr[i].getElementsByTagName("td")[1];
 		if (td) {
 			if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
 				tr[i].style.display = "";
