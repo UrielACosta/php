@@ -1,0 +1,124 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "285a80e57dbe9ff4ef0987ce9f9ad74a",
+    "packages": [
+        {
+            "name": "dhaval/image-uploader",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DhavalKapil/image-uploader.git",
+                "reference": "23d59f670e3a07e7fb8d41457cec1e496497ff65"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DhavalKapil/image-uploader/zipball/23d59f670e3a07e7fb8d41457cec1e496497ff65",
+                "reference": "23d59f670e3a07e7fb8d41457cec1e496497ff65",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/ImageUploader.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhaval Kapil",
+                    "email": "me@dhavalkapil.com",
+                    "homepage": "https://dhavalkapil.com/",
+                    "role": "developer"
+                },
+                {
+                    "name": "Aditya Prakash",
+                    "email": "adiitya.adda@gmail.com",
+                    "homepage": "https://github.com/adiitya",
+                    "role": "developer"
+                }
+            ],
+            "description": "A simple and elegant PHP library for securely uploading images",
+            "homepage": "https://github.com/dhavalkapil/image-uploader",
+            "keywords": [
+                "customize",
+                "image",
+                "secure",
+                "upload"
+            ],
+            "time": "2016-02-27T19:15:45+00:00"
+        },
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "3.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "4842476c434e375f9d3182ff7b89059583aa8b27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/4842476c434e375f9d3182ff7b89059583aa8b27",
+                "reference": "4842476c434e375f9d3182ff7b89059583aa8b27",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "bin": [
+                "bin/phpcs",
+                "bin/phpcbf"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "http://www.squizlabs.com/php-codesniffer",
+            "keywords": [
+                "phpcs",
+                "standards"
+            ],
+            "time": "2018-02-20T21:35:23+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "dhaval/image-uploader": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.6.25"
+    },
+    "platform-dev": []
+}

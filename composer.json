@@ -1,10 +1,18 @@
+
 {
+    "name": "Site",
+    "description": "Entrevista PHP",
+    "authors": [
+        {
+            "name": "Seu nome",
+            "email": "alvesuriel@gmail.com"
+        }
+    ],
     "require": {
-        "php": ">=5.5.*"
-    }
-}
-{
-    "require-dev": {
+        "php": ">=5.6.25",
+        "dhaval/image-uploader" : "dev-master",
         "squizlabs/php_codesniffer": "3.*"
     }
 }
+
+ 
