@@ -9,7 +9,7 @@ $query_select = "SELECT u.id, u.nome, u.email, u.dataNasc, u.telefone, u.cargo, 
 
 // SELECT * FROM usuario LEFT JOIN perfil ON usuario.id_perfil = perfil.id_perfil
 
-// UNION 
+// UNION
 
 // SELECT * FROM usuario RIGHT JOIN perfil ON usuario.id_perfil = perfil.id_perfil;
 

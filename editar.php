@@ -8,7 +8,7 @@ $cargo = $_POST['idCargo'];
 $salario = $_POST['idSalario'];
 $foto = $_POST["idFoto"];
 
-	/
+    /
 //vir com mais uma variavel aqui para poder editar minha role do usuario
 
 $conn = mysqli_connect("localhost", "root", "", "Banco");

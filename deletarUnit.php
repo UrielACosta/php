@@ -1,8 +1,8 @@
 <?php
 
-class HelloWorldTest extends PHPUnit_Framework_TestCase
+class ConexaoTest extends PHPUnit_Framework_TestCase
 {
-    public function testHelloWorld()
+    public function testConexaoTest()
     {
 
         $conn = mysqli_connect("localhost", "root", "", "Banco");

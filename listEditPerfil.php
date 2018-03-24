@@ -10,8 +10,6 @@ $result = mysqli_query($conn, $query_select);
 $usuarios = array();
 
 while ($row = mysqli_fetch_assoc($result)) {
-
-
     $usuarios[] = array('id_perfil' => $row['id_perfil'],'nome_Perfil' => $row['nome_Perfil'], 'descricao' => $row['descricao']);
 }
 
