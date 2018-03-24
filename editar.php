@@ -8,6 +8,9 @@ $cargo = $_POST['idCargo'];
 $salario = $_POST['idSalario'];
 $foto = $_POST["idFoto"];
 
+	/
+//vir com mais uma variavel aqui para poder editar minha role do usuario
+
 $conn = mysqli_connect("localhost", "root", "", "Banco");
 
 $query_select = "UPDATE usuario set nome ='$nome', email = '$email', dataNasc = '$dataNasc', telefone = '$telefone', cargo = '$cargo', salario = '$salario', foto = '$foto' where id = '$id'";

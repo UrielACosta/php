@@ -53,13 +53,20 @@
 		<div class="row">
 			<div class="text-center col">
 
-				<button class="btn btn-dark" id="btnCadastrar">CADASTRAR</button>
+				<button class="btn btn-dark" id="btnCadastrar">CADASTRAR USUARIO</button>
 
-				<a href='#editar' id="btnEditar" class="btn btn-dark">EDITAR</span></a>
+				
 
-				<!-- <button class="btn btn-dark" id="btnTabela">TABELA</button>
+				<a href='#CadastroPerfil' id="btnCadastrarPerfil" class="btn btn-dark">CADASTRAR PERFIL</span></a>
+				
+				<a href='#CadastroPerfil' id="btnTabelaHide" class="btn btn-dark">ESCONDER TABELAS</span></a>
+				<a href='#CadastroPerfil' id="btnTabelaShow" class="btn btn-dark">MOSTRAR TABELAS</span></a>
 
-					<button class="btn btn-dark" id="btnMostrarTodos">MOSTRAR TODOS</button> -->
+				
+
+				
+
+				<!--	<button class="btn btn-dark" id="btnMostrarTodos">MOSTRAR TODOS</button> -->
 
 				</div>
 			</div>
@@ -174,6 +181,37 @@
 			</div>
 		</section>
 
+		<section id="tabelaPerfil" class="tamanhoDatela espacamentoTop">
+
+			<div class="d-flex justify-content-center">
+				<h1>TABELA PERFIL</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-12 mg-b50">
+					<input type="text" onkeyup="myFunctionPerfil()" class="form-control" id="myInputPerfil" placeholder="Pesquisa simples por nome">
+				</div>
+
+
+				<div class="col-md-12">
+					
+					<table class="table table-striped table-dark table-responsive w-100 d-block d-md-table" id="myTablePerfil">
+						<thead>
+							<tr>
+								<th scope="col">ID</th>
+								<th scope="col">Perfil</th>
+								<th scope="col">Descrição</th>
+								
+									
+							</tr>
+						</thead>
+						<tbody id="conteudoPerfil">		
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+
 
 		<section id="editarSection" class="mg-b50 tamanhoDatela espacamentoTop">
 			<form  class="" id="editar" action="">
@@ -189,7 +227,7 @@
 				</div>
 
 				<div class="form-group">
-					<label for="idEmail">Email</label>
+					<label for="idDescrição">Email</label>
 					<input type="email" class="form-control border-top-0 border-right-0 border-left-0" id="idEmailEdit" name="idEmail" placeholder="Email" >
 				</div>
 
@@ -219,8 +257,8 @@
 				</div>
 				<div class="form-group">
 
-						<label for="idPerfil">Escolha seu tipo de usuário</label>
-						<select id="idPerfil" name="idPerfil" class="form-control">
+						<label for="idPerfil1">Escolha seu tipo de usuário</label>
+						<select id="idPerfil1" name="idPerfil1" class="form-control">
 							
 						</select>
 					
@@ -232,7 +270,7 @@
 			</form>
 		</section>
 
-		<section id="" class="mg-b50 tamanhoDatela espacamentoTop">
+		<section id="cadastroperfil" class="mg-b50 tamanhoDatela espacamentoTop">
 			<form  class="" id="cadastrarPerfil" action="">
 				<div class="d-flex justify-content-center marginBottom">
 					<h1>CADASTRO</h1>
@@ -250,6 +288,33 @@
 				
 				<div class="d-flex justify-content-center">
 					<button type="submit" class="btn btn-secondary btn-lg">CADASTRAR</button>
+				</div>
+			</form>
+		</section>
+
+
+
+		<section id="editarperfil" class="mg-b50 tamanhoDatela espacamentoTop">
+			<form  class="" id="editarperfilform" action="">
+				<div class="d-flex justify-content-center marginBottom">
+					<h1>CADASTRO PERFIL</h1>
+				</div>
+				
+				<input type="hidden" name="id_perfil" id="id_perfil">
+
+				<div class="form-group">
+					<label for="idNomePerfilEdit">Nome Perfil</label>
+					<input type="text" class="form-control border-top-0 border-right-0 border-left-0" id="idNomePerfilEdit" name="idNomePerfilEdit" placeholder="Ex: Administrador" required>
+				</div>
+
+				<div class="form-group">
+					<label for="idPerfilDescEdit">Descrição Perfil</label>
+					<input type="text" class="form-control border-top-0 border-right-0 border-left-0" id="idPerfilDescEdit" name="idPerfilDescEdit" placeholder="Descrição do perfil" >
+				</div>
+
+				
+				<div class="d-flex justify-content-center">
+					<button type="submit" class="btn btn-secondary btn-lg">EDITAR</button>
 				</div>
 			</form>
 		</section>
